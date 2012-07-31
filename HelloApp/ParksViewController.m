@@ -40,5 +40,6 @@
 }
 
 - (IBAction)helloButtonPressed:(UIButton *)sender {
+    self.helloLabel.text = self.helloTextField.text;
 }
 @end
