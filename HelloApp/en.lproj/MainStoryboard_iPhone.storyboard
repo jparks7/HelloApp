@@ -26,6 +26,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="helloButtonPressed:" destination="2" eventType="touchUpInside" id="5ak-gx-dlQ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Something Here" textAlignment="center" minimumFontSize="17" id="cLd-u7-Plc">
                                 <rect key="frame" x="76" y="158" width="168" height="31"/>
@@ -43,13 +46,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="Yp8-T8-Nez" id="939-k7-lCH"/>
+                        <outlet property="helloTextField" destination="cLd-u7-Plc" id="qw8-1R-zCk"/>
+                    </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="271" y="122"/>
         </scene>
     </scenes>
     <classes>
         <class className="ParksViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ParksViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="helloButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="helloLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="helloTextField" candidateClass="UITextField"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

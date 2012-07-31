@@ -13,6 +13,8 @@
 @end
 
 @implementation ParksViewController
+@synthesize helloTextField;
+@synthesize helloLabel;
 
 - (void)viewDidLoad
 {
@@ -22,6 +24,8 @@
 
 - (void)viewDidUnload
 {
+    [self setHelloTextField:nil];
+    [self setHelloLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -35,4 +39,6 @@
     }
 }
 
+- (IBAction)helloButtonPressed:(UIButton *)sender {
+}
 @end
